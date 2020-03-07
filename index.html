@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+       <meta charset="UTF-08">
+       <title>Employee Data Management</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+    <div class="jumbotron" style="background-color: rgb(110, 73, 73); color:white;">
+        <h1 class="text-center">Train Scheduler</h1>
+        <h2 class="text-center">Check your current train schedule!</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+        <br>
+        
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong><i class="fa fa-train"></i>Current Train Schedule</strong></h3>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Train Name</th>
+                        <th> Destination</th>
+                        <th> Frequency (min)</th>
+                        <th> Next Arrival</th>
+                        <th> Minutes Away</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong><i class="fa fa-train"></i>Add Train</strong></h3>
+            </div>
+          <div class="panel-body">
+   
+              <form role="form">
+                  <div class="form-group">
+                      <label for="train-name">Train Name</label>
+                      <br>
+                      <input type="text" class="form-control" id="train-name" style= width:650px; placeholder="California Caravan">
+                  </div>
+        <div class="form-group">
+            <label for="Destination">Destination: </label>
+            <br>
+            <input type="text" class="form-control" id="Destination" style= width:650px; placeholder="California ">
+        </div>
+        <div class="form-group">
+            <label for="train-time">First Train Time (HH:mm-military time)</label>
+            <input type="text" class="form-control" id="train-time" style= width:684px; placeholder="21:30">
+        </div>
+        <div class="form-group">
+            <label for="Frequency">Frequency (min):</label>
+            <input type="text" class="form-control" id="Frequency" style= width:684px; placeholder="60">
+        </div>
+        <button type="submit" class="btn btn-default" id="submit"> Submit </button>
+
+              </form>
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                    <hr>
+                    <h5 class="text-center"><small>Made by Quyen with lots of love <i class="fa fa-heart"></i></small></h5>
+                    </div>
+              <script src="https://code.jquery.com/jquery.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+              <!-- Firebase Core JavaScript Link -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <!-- Specific Firebase products we want (Database) -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+
+  <!-- Script -->
+  <script src="logic.js"></script>       
+    </body>
+    </html>
